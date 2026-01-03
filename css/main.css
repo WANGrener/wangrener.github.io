@@ -1266,7 +1266,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff4bff;
+    background: #4ae295;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2890,4 +2890,83 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+/* 1. 全屏固定背景图片 */
+body {
+  background: url("/images/a6c3921af3e98de69336610dc26d59a014153130.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 20px;
+}
+/* ===== 第二部分：博客内容透明化（根据参考文章修改优化） ===== */
+/* 文章内容区域 */
+.content-wrap {
+  opacity: 0.75; /* 透明度，可根据喜好调整 0-1 之间 */
+  background-color: rgba(255,255,255,0); /* 初始背景完全透明 */
+  border-radius: 12px; /* 为您原有的圆角效果 */
+  padding: 25px 30px !important; /* 为您原有的内边距 */
+  margin-bottom: 25px !important;
+}
+/* 为文章块单独添加白色透明背景，形成“卡片” */
+.post-block {
+  background-color: rgba(255,255,255,0.8) !important;
+  border-radius: 12px !important;
+  padding: 25px 30px !important;
+  margin-bottom: 25px !important;
+}
+.post-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+}
+/* 侧边栏 */
+.sidebar {
+  opacity: 0.9;
+}
+/* 菜单栏 - 特别注意：不能使用 opacity，需用 rgba 设置背景色 */
+.header-inner {
+  background: rgba(255,255,255,0.75) !important;
+  border-radius: 12px !important; /* 保持您的圆角风格 */
+}
+/* 搜索框（如果启用） */
+.popup {
+  opacity: 0.9;
+}
+/* ===== 第三部分：代码块与标题样式（保持您的偏好） ===== */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content code {
+  background-color: rgba(255,255,255,0.5) !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+}
+.post-content figure.highlight {
+  background-color: #f8f9fa !important; /* 浅灰色代码块 */
+  border-radius: 8px !important;
+}
+/* ===== 第四部分：顶天立地半透明滚动条（根据您的要求保留） ===== */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.5);
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
