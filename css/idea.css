@@ -1,0 +1,46 @@
+body:has(.idea-app) .content-wrap{opacity:1;background:none!important}
+body:has(.idea-app) .post-block{background:#fffdf9!important;box-shadow:0 5px 28px #2221!important;border:1px solid #eee9df;border-radius:12px!important}
+body:has(.idea-app) .post-block:hover{transform:none}
+body:has(.idea-app) .post-body{overflow:visible}
+.idea-app{--ink:#303c35;--muted:#737970;--line:#e7e5dd;color:var(--ink);font-size:15px;line-height:1.9;text-align:left}
+.idea-app *{box-sizing:border-box}
+.idea-app a{color:inherit;border-bottom:0}
+.idea-app h1,.idea-app h2,.idea-app h3{background:none!important;padding:0!important;line-height:1.5;font-family:inherit}
+.idea-app a:focus-visible{outline:2px solid #557766;outline-offset:4px;border-radius:3px}
+.idea-eyebrow{font-size:11px;letter-spacing:2.4px;color:#727e71;font-weight:600}
+.idea-app h1{font-size:40px;font-weight:600;letter-spacing:2px;margin:12px 0 18px}
+.idea-app h1 span{color:var(--theme-color,#7c9577)}
+.idea-intro>p{color:#697267;margin:0 0 22px;font-size:14px}
+.idea-home .idea-intro{border-bottom:1px solid var(--line);padding-bottom:10px}
+.idea-overview{display:grid;grid-template-columns:250px 1fr;gap:36px;align-items:center;padding:32px 0 16px}
+.idea-chart-wrap{position:relative;width:250px;height:250px}
+.idea-chart-wrap svg{display:block;width:100%;height:100%;overflow:visible}
+.idea-chart-wrap a{cursor:pointer}
+.idea-chart-wrap a:hover path,.idea-chart-wrap a:focus path{filter:brightness(.85)}
+.idea-chart-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+.idea-chart-center strong{font-size:36px;font-weight:500;line-height:1.3;font-variant-numeric:tabular-nums}
+.idea-chart-center span{font-size:11px;color:var(--muted);letter-spacing:2px}
+.idea-app h2{font-size:18px;font-weight:600;margin:0}
+.idea-hint{font-size:12px;color:var(--muted);margin:6px 0 16px}
+.idea-legend{display:grid;gap:5px}
+.idea-legend-item{display:flex;align-items:center;gap:10px;width:100%;padding:5px 9px;border-radius:5px;text-align:left;font-size:13px}
+.idea-legend-item:hover{background:#e9eee6;color:#263e2e}
+.idea-dot{height:8px;width:8px;border-radius:50%;flex-shrink:0}
+.idea-legend-count{margin-left:auto;font-size:12px;color:#737970;font-variant-numeric:tabular-nums}
+.idea-back{display:inline-block;font-size:12px;color:#788571!important;margin-bottom:28px}
+.idea-reading{max-width:680px;margin:0 auto}
+.idea-reading .idea-intro{padding-bottom:24px;border-bottom:1px solid var(--line)}
+.idea-reading h1{font-size:32px;letter-spacing:1px}
+.idea-journal{padding-top:6px}
+.idea-day{padding:30px 0 22px;border-bottom:1px solid var(--line)}
+.idea-day h2{font-size:12px;letter-spacing:1.2px;color:#8a8e82;font-weight:400;margin-bottom:17px;font-variant-numeric:tabular-nums}
+.idea-day-body{font-size:15px;line-height:2.15;color:#505b4e;overflow-wrap:anywhere}
+.idea-note{scroll-margin-top:28px}
+.idea-note+.idea-note{margin-top:22px}
+.idea-note p{margin:0 0 14px}
+.idea-note p:last-child{margin-bottom:0}
+.idea-note:target{background:#f0f4e9;outline:8px solid #f0f4e9;border-radius:3px}
+.idea-note img{display:block;max-width:100%;height:auto;width:auto;max-height:340px;object-fit:contain;border-radius:5px;margin:20px 0}
+.idea-footer{font-size:12px;color:#718169;padding-top:28px}
+@media(min-width:1200px){body:has(.idea-app) .main-inner{width:1180px}body:has(.idea-app) .content-wrap{width:900px!important}}
+@media(max-width:767px){body:has(.idea-app) .content-wrap{padding:10px!important}body:has(.idea-app) .post-block{padding:26px 20px!important}.idea-app h1{font-size:32px}.idea-overview{grid-template-columns:1fr;gap:18px;padding:20px 0 4px}.idea-chart-wrap{margin:auto;width:225px;height:225px}.idea-legend-wrap h2,.idea-hint{text-align:center}.idea-legend{grid-template-columns:1fr 1fr;gap:6px}.idea-legend-item{font-size:11px;padding:7px 5px;gap:7px}.idea-legend-count{font-size:10px}.idea-reading h1{font-size:27px}.idea-day-body{font-size:14px;line-height:2.1}.idea-back{margin-bottom:24px}.idea-day{padding:25px 0}.idea-reading .idea-intro{padding-bottom:14px}}
